@@ -1,7 +1,0 @@
-west:
-  command: C:\Users\brandon.edmonds\dev\tooling\nordic\ncs\toolchains\b620d30767\opt\bin\Scripts\west
-    build --build-dir c:/Users/brandon.edmonds/dev/repos/svhc_act/dev/AlgoTest/build
-    c:/Users/brandon.edmonds/dev/repos/svhc_act/dev/AlgoTest --pristine --board nrf52840dk/nrf52840
-    -- -DNCS_TOOLCHAIN_VERSION=NONE -DCONF_FILE=prj.conf
-  topdir: c:\Users\brandon.edmonds\dev\repos\svhc_act
-  version: 1.2.0
