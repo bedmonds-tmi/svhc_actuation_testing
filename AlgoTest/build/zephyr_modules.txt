@@ -1,5 +1,6 @@
 "tmi_sdk":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/tmi-sdk":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/tmi-sdk"
 "cmsis":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/modules/hal/cmsis":"${ZEPHYR_CMSIS_CMAKE_DIR}"
+"cmsis-dsp":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/modules/lib/cmsis-dsp":"${ZEPHYR_CMSIS_DSP_CMAKE_DIR}"
 "hal_nordic":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/modules/hal/nordic":"${ZEPHYR_HAL_NORDIC_CMAKE_DIR}"
 "mcuboot":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/bootloader/mcuboot":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/bootloader/mcuboot/boot/bootutil/zephyr"
 "segger":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/modules/debug/segger":"${ZEPHYR_SEGGER_CMAKE_DIR}"

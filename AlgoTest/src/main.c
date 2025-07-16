@@ -3,7 +3,7 @@
 #include <zephyr/sys/ring_buffer.h>
 #include <nrfx_clock.h>
 
-#include "audio_settings.h"
+#include "pdm_settings.h"
 
 /* ---------- PDM Microphone ---------- 
 - mem_slab: a memory slab of BLOCK_COUNT blocks of size BLOCK_SIZE,
@@ -15,7 +15,7 @@ static const struct device *const dmic_dev = DEVICE_DT_GET(DT_NODELABEL(dmic_dev
 
 static inline int pdm_init()
 {
-  const struct device *dev
+  const struct device *dev;
 	int ret;
 
 	if (!device_is_ready(dmic_dev)) {

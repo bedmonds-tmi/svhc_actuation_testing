@@ -210,7 +210,10 @@ void feature_extraction(const int* window, const int window_size, const int samp
 
     // Apply low-pass filter
     apply_lp_filter(window_flt, window_size);
-    arm_biquad_cascade_df2T_instance_f64
+    uint8_t numStages = 1;
+    float32_t pState[1] = {0};
+    float32_t pCoeffs[1] = {0};
+    arm_biquad_cascade_df2T_instance_f64 S1 = {numStages, pState, pCoeffs};
 
     // Down sample
     float window2[window_size/2] = {0};
