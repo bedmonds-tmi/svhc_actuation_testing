@@ -1,0 +1,27 @@
+manifest:
+  version: 0.8
+
+  self:
+    path: dev
+
+  projects:
+    - name: zephyr
+      url: https://github.com/zephyrproject-rtos/zephyr
+      revision: v4.1.0
+      import:
+        file: west.yml
+        path-prefix: deps
+        name-allowlist:
+          - nrf
+          - zephyr
+          - hal_nordic
+          - tinycrypt
+          - segger
+          - cmsis
+          - mcuboot
+          - zcbor
+          
+    - name: tmi-sdk
+      url: https://github.com/bedmonds-trudell/tmi-sdk
+      revision: main
+      path: deps/tmi-sdk
