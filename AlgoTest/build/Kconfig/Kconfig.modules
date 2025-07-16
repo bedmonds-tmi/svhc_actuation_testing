@@ -10,12 +10,6 @@ config ZEPHYR_CMSIS_MODULE
 	bool
 	default y
 endmenu
-menu "cmsis-dsp (C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/modules/lib/cmsis-dsp)"
-osource "$(ZEPHYR_CMSIS_DSP_KCONFIG)"
-config ZEPHYR_CMSIS_DSP_MODULE
-	bool
-	default y
-endmenu
 menu "hal_nordic (C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/modules/hal/nordic)"
 osource "$(ZEPHYR_HAL_NORDIC_KCONFIG)"
 config ZEPHYR_HAL_NORDIC_MODULE

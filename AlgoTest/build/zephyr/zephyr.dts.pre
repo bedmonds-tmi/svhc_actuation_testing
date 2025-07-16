@@ -1243,4 +1243,22 @@ zephyr_udc0: &usbd {
  status = "okay";
 };
 # 0 "<command-line>" 2
+# 1 "C:/Users/brandon.edmonds/dev/repos/svhc_act/dev/AlgoTest/app.overlay" 1
+&pinctrl {
+ pdm0_default_alt: pdm0_default_alt {
+  group1 {
+   psels = <((((((0) * 32U) + (3)) & 0x1FFU) << 0U) | ((20U & 0xFFU) << 24U))>,
+    <((((((0) * 32U) + (4)) & 0x1FFU) << 0U) | ((21U & 0xFFU) << 24U))>;
+  };
+ };
+};
+
+dmic_dev: &pdm0 {
+ status = "okay";
+ pinctrl-0 = <&pdm0_default_alt>;
+ pinctrl-names = "default";
+ clock-source = "PCLK32M_HFXO";
+ queue-size = <16>;
+};
+# 0 "<command-line>" 2
 # 1 "C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/zephyr/misc/empty_file.c"

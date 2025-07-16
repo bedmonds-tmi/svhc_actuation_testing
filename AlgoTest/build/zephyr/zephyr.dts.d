@@ -29,4 +29,5 @@ empty_file.o: \
  C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/zephyr/include/zephyr/dt-bindings/adc/nrf-saadc.h \
  C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/zephyr/include/zephyr/dt-bindings/regulator/nrf5x.h \
  C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/zephyr/dts/common/nordic/nrf52840_partition.dtsi \
- C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/zephyr/boards/nordic/nrf52840dk/nrf52840dk_nrf52840-pinctrl.dtsi
+ C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/zephyr/boards/nordic/nrf52840dk/nrf52840dk_nrf52840-pinctrl.dtsi \
+ C:/Users/brandon.edmonds/dev/repos/svhc_act/dev/AlgoTest/app.overlay

@@ -15,7 +15,6 @@ static const struct device *const dmic_dev = DEVICE_DT_GET(DT_NODELABEL(dmic_dev
 
 static inline int pdm_init()
 {
-  const struct device *dev;
 	int ret;
 
 	if (!device_is_ready(dmic_dev)) {
@@ -97,7 +96,7 @@ int main(void)
 		}
 
 		/* Copy data to ring buffer */
-		ret = ring_buf_put(&usb_ring_buf, buffer, size); // Returns number of bytes copied to ring buffer
+		ret = ring_buf_put(&ring_buf, buffer, size); // Returns number of bytes copied to ring buffer
 		k_mem_slab_free(&mem_slab, (void *)buffer);
 	}
 
