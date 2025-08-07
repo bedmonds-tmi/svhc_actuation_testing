@@ -6,9 +6,10 @@ LOG_MODULE_REGISTER(app);
 
 int main(void)
 {
+	using ledCmd = ssLed::Command::Type;
 	subLed.init();
   subLed.start();
-  subLed.setBlink();
+  subLed.cmd({ledCmd::SET_STATE, ssLed::State::BLINK});
   while(1) {
     k_msleep(1000);
   }

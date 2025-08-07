@@ -1,1 +1,0 @@
-"mcuboot":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/bootloader/mcuboot":"C:/Users/brandon.edmonds/dev/repos/svhc_act/deps/bootloader/mcuboot/boot/zephyr/sysbuild"
