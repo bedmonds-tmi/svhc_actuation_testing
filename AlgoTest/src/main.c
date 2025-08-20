@@ -84,7 +84,7 @@ int main(void)
 	}
 	printk("PDM setup complete\n");
 
-	while(1){
+	while(1) {
 		/* Read data from PDM microphone */
 		uint8_t *buffer = NULL;
 		uint32_t size = 0;

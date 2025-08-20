@@ -1,6 +1,6 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
-#include <tmi/sub/led/led.hpp>
+#include <tmi/svc/led.hpp>
 
 LOG_MODULE_REGISTER(app);
 
