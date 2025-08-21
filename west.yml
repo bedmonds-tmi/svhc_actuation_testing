@@ -18,6 +18,7 @@ manifest:
           - tinycrypt
           - segger
           - cmsis
+          - cmsis-dsp
           - mcuboot
           - zcbor
           

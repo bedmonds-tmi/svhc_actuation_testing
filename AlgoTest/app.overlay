@@ -14,3 +14,17 @@ dmic_dev: &pdm0 {
 	clock-source = "PCLK32M_HFXO";
 	queue-size = <16>;
 };
+
+&i2c0 {
+	compatible = "nordic,nrf-twim";
+	status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-1 = <&i2c0_sleep>;
+	pinctrl-names = "default", "sleep";
+	clock-frequency = <I2C_BITRATE_FAST>;
+	pressure: xgzp68@6D {
+		compatible = "cfsensor,xgzp68";
+		status = "okay";
+		reg = <0x6D>;
+	};
+};
